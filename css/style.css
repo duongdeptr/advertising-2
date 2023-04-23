@@ -1,0 +1,197 @@
+@charset "utf-8";
+/* CSS Document */
+.banner
+{
+	width: 210px;
+	height: 480px;
+	margin: 100px auto;
+	border: 1px solid #ccc;
+	position: relative;
+	overflow: hidden;
+}
+.h2{
+	height: 300px;
+	/*height: 50px;*/
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-image: url("../images/image12.png");
+	z-index: 5;
+	animation: h2 20s linear infinite; 
+}
+@keyframes h2
+{
+	0%
+	{
+		height: 50px;
+		background-image: url("../images/image12.png");
+		
+	}
+	5%,45%
+	{
+		height: 300px;
+		background-image: url("../images/image12.png");
+	}
+	50%
+	{
+		height: 50px;
+		background-image: url("../images/image12.png");
+	}
+	51%
+	{
+		background-image: url("../images/image32.png");
+	}
+	55%,95%
+	{
+		height: 300px;
+		background-image: url("../images/image32.png")
+	}
+	100%
+	{
+		height: 50px;
+		background-image: url("../images/image32.png")
+	}
+}
+.h1{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+
+}
+.h3
+{
+	position: absolute;
+	z-index: 10;
+	transform: rotate(180deg);
+	top: 223px;
+	/*top:-30px;*/
+	left: 0;
+	animation: h3 20s linear infinite; 
+}
+@keyframes h3
+{
+	0%
+	{
+		top: -30px;
+	}
+	5%,45%
+	{
+		top: 223px;		
+	}
+	50%
+	{
+		top: -30px;
+	}
+	55%,95%
+	{
+		top: 223px;
+	}
+	100%
+	{
+		top: -30px;
+	}
+}
+.h4
+{
+	position: absolute;
+	z-index: 15;
+	top: 192px;
+	/*top:-62px;*/
+	left: 0;
+	animation: h4 20s linear infinite; 
+}
+@keyframes h4
+{
+	0%
+	{
+		top: -62px;
+	}
+	5%,45%
+	{
+		top: 192px;		
+	}
+	50%
+	{
+		top: -62px;
+	}
+	55%,95%
+	{
+		top: 192px;
+	}
+	100%
+	{
+		top: -62px;
+	}
+}
+.h5{
+	position: absolute;
+	z-index: 12;
+	bottom: 43px;
+	left: 19px;
+	transform: scale(.6);
+	animation: h5 10s linear infinite; 
+}
+.h6
+{
+	position: absolute;
+	bottom: 92px;
+	left: 102px;
+	z-index: 13;
+	animation: h6 1s linear infinite; 
+}
+.h7{
+	position: absolute;
+	bottom: 20px;
+	left: 80px;
+	z-index: 13;
+	transform: scale(1.5);
+	animation: h7 20s linear infinite; 
+}
+@keyframes h7
+{
+	0%,5%
+	{
+		transform: scale(2.5);
+		opacity: 0;
+	}
+	10%,45%
+	{
+		transform: scale(1.5) rotate(360deg);
+		opacity: 1;	
+	}
+	50%
+	{
+		transform: scale(1.5) rotate(360deg);
+		opacity: 0;	
+	}
+	55%
+	{
+		transform: scale(2.5) rotate(0deg);
+		opacity: 0;	
+	}
+	60%,95%
+	{
+		transform: scale(1.5) rotate(360deg);
+		opacity: 1;	
+	}
+	100%
+	{
+		transform: scale(1.5) rotate(360deg);
+		opacity: 0;	
+	}
+}
+@keyframes h6
+{
+	0%,100%
+	{
+		transform: scale(1.2);
+		opacity: 1;
+	}
+	50%
+	{
+		transform: scale(1);
+		opacity: 0;
+	}
+}
